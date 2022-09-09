@@ -17,7 +17,7 @@ Packages: datetime, itertools, os, matplotlib, pandas, numpy, seaborn and sklear
 
 The dataset contains information about COVID-19 numbers from late February until late July. The records were gathered and compiled by a consortium of main Brazilian press vehicles using their methodology due to the lack of trust in numbers delivered by Brazil's Ministry of Health. That's why we have two different columns for the number of cases and mortality.
 
-Its feature are: semana (epidemiological week), data (date), pais (country), estado (state), cidade (city), novosObitos (new deaths), Obitos (deaths), novosCasos (new cases), Casos (cases), obitosMs (death count by Ministry of Health), casosMS (cases count by Ministry of Health), obitos_por_100k (death per 100k), casos_por_100k (cases per 100k), obitos_por_casos (death by the number of cases), recuperados (recovered), suspeitos (suspicious cases), testes (COVID tests made), testes_por_100k (COVID tests made per 100k).
+Its features are: semana (epidemiological week), data (date), pais (country), estado (state), cidade (city), novosObitos (new deaths), Obitos (deaths), novosCasos (new cases), Casos (cases), obitosMs (death count by Ministry of Health), casosMS (cases count by Ministry of Health), obitos_por_100k (death per 100k), casos_por_100k (cases per 100k), obitos_por_casos (death by the number of cases), recuperados (recovered), suspeitos (suspicious cases), testes (COVID tests made), testes_por_100k (COVID tests made per 100k).
 
 ## Data cleaning
 
@@ -32,7 +32,7 @@ I checked:
 - null values and there were several of them due to data compilation methodology.
 - size and the data set's main statistics.
 
-I looked at the mortality rate in all states and decided to continue the exploration using São Paulo state data only since it has the largest population in the whole country. Plus, it detected new deaths exponential growth rate, and seven-day seasonality. I also used autocorrelation and partial autocorrelation to confirm how long the mortality and number of cases were correlated to each and these analyses were useful in the model.
+I looked at the mortality rate in all states and decided to continue the exploration using São Paulo state data only since it has the largest population in the whole country. Plus, it detected new deaths exponential growth rate, and seven-day seasonality. I also used autocorrelation and partial autocorrelation to confirm how long the mortality and number of cases were correlated to each and these analyses were useful to determine the model's parameters.
 
 ## Model building
 
@@ -47,6 +47,3 @@ The best SARIMA model for the number of cases had an AIC (Akaike Information Cri
 For the mortality predictions, the model achieved an AIC of 3462 for (0,1,1,7) setup.
 
 The model did well to forecast the following 30 days' number of cases and mortality. After that, the model's performance was decreasing.
-
-
-
