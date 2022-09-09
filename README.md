@@ -26,6 +26,7 @@ I created the following features:
 - aceleracao_obitos (mortality growth rate)
 - media_movel_mortes_7_dias (7-day moving average)
 - media_movel_mortes_14_dias (14-day moving average)
+- dia_da_semana (weekday)
 
 I checked: 
 - the data types and needed to convert the Date column into date type.
