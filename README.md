@@ -1,5 +1,7 @@
 # Brazil 2020 COVID-19 Analysis: Project Overview
 
+**Tags: ARIMA/SARIMA models, AIC, seasonal decompose, ADF, differencing, feature engineering, EDA, time series, forecast, moving average**
+
 - This notebook is part of Alura's courses [Análise de série temporal: COVID-19 (Time series analysis: COVID-19)]((https://cursos.alura.com.br/course/analise-serie-temporal-covid-19)) and [Previsões de série temporal: COVID-19 (Time series predictions: COVID-19)](https://cursos.alura.com.br/course/previsoes-serie-temporal-covid-19) by Sara Malvar.
 - Created a time series analysis of COVID-19 in Brazil 2020. 
 - Performed features scaling.
